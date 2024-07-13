@@ -12,7 +12,12 @@ public class TodoItemTests
 		var name = "Test Todo";
 
 		// Act
-		var todoItem = new TodoItem(listId, name);
+		var todoItem = new TodoItem
+			(
+			listId, 
+			name
+		)
+			;
 
 		// Assert
 		Assert.Equal(listId, todoItem.ListId);
